@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">wireframe</string>
+    <string name="affectionText">Affection</string>
+    <string name="petName">CATTO</string>
+    <string name="playButtonText">Play</string>
+    <string name="cleanButtonText">Clean</string>
+    <string name="satiationText">Satiation</string>
+    <string name="cleannessText">Cleanness</string>
+    <string name="petIVDescription">Image of the pet</string>
+    <string name="pencilIVDescription">Image of a pencil, intended to take user to settings, probably should be removed.</string>
+    <string name="feedButtonText">Feed</string>
 </resources>

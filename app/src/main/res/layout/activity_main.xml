@@ -7,10 +7,10 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/petName"
+        android:id="@+id/petTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CATTO"
+        android:text="@string/petName"
         android:textSize="24sp"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,34 +24,34 @@
         android:id="@+id/playButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Play"
+        android:text="@string/playButtonText"
         app:backgroundTint="#77D80909"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/feedPlay"
+        app:layout_constraintEnd_toStartOf="@+id/feedButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/petName" />
+        app:layout_constraintTop_toBottomOf="@+id/petTextView" />
 
     <Button
-        android:id="@+id/feedPlay"
+        android:id="@+id/feedButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Feed"
+        android:text="@string/feedButtonText"
         app:backgroundTint="#77D80909"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/petName" />
+        app:layout_constraintTop_toBottomOf="@+id/petTextView" />
 
     <Button
         android:id="@+id/cleanButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Clean"
+        android:text="@string/cleanButtonText"
         app:backgroundTint="#77D80909"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/feedPlay"
-        app:layout_constraintTop_toBottomOf="@+id/petName" />
+        app:layout_constraintStart_toEndOf="@+id/feedButton"
+        app:layout_constraintTop_toBottomOf="@+id/petTextView" />
 
     <ProgressBar
         android:id="@+id/satiationBar"
@@ -93,10 +93,10 @@
         app:layout_constraintTop_toBottomOf="@+id/cleannessBar" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/satiationTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Satiation"
+        android:text="@string/satiationText"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         app:layout_constraintBottom_toBottomOf="@+id/satiationBar"
@@ -104,29 +104,30 @@
         app:layout_constraintTop_toTopOf="@+id/satiationBar" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/cleannessTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Affection"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/affectionBar"
-        app:layout_constraintStart_toEndOf="@+id/affectionBar"
-        app:layout_constraintTop_toTopOf="@+id/affectionBar" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Cleanness"
+        android:text="@string/cleannessText"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         app:layout_constraintBottom_toBottomOf="@+id/cleannessBar"
         app:layout_constraintStart_toEndOf="@+id/cleannessBar"
         app:layout_constraintTop_toTopOf="@+id/cleannessBar" />
 
+    <TextView
+        android:id="@+id/affectionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/affectionText"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/affectionBar"
+        app:layout_constraintStart_toEndOf="@+id/affectionBar"
+        app:layout_constraintTop_toTopOf="@+id/affectionBar" />
+
     <ImageView
         android:id="@+id/petImageView"
+        android:contentDescription="@string/petIVDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -137,13 +138,14 @@
         app:srcCompat="@android:drawable/ic_menu_edit" />
 
     <ImageView
-        android:id="@+id/pencilImage"
+        android:id="@+id/pencilImageView"
+        android:contentDescription="@string/pencilIVDescription"
         android:layout_width="214dp"
         android:layout_height="295dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/therealidleone" />
+        app:srcCompat="@drawable/petPlaceholder" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

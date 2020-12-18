@@ -27,8 +27,8 @@
         android:text="Play"
         app:backgroundTint="#77D80909"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:layout_editor_absoluteX="36dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/button2"
@@ -37,8 +37,10 @@
         android:text="Feed"
         app:backgroundTint="#77D80909"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintStart_toEndOf="@+id/button"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:layout_editor_absoluteX="163dp" />
+        app:layout_constraintVertical_bias="0.502" />
 
     <Button
         android:id="@+id/button3"
@@ -47,8 +49,8 @@
         android:text="Clean"
         app:backgroundTint="#77D80909"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:layout_editor_absoluteX="291dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <ProgressBar
         android:max="100"
@@ -84,7 +86,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Life"
+        android:text="Satiation"
         tools:layout_editor_absoluteX="164dp"
         tools:layout_editor_absoluteY="73dp" />
 
@@ -92,7 +94,7 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fun"
+        android:text="Cleanness"
         tools:layout_editor_absoluteX="164dp"
         tools:layout_editor_absoluteY="122dp" />
 
@@ -100,7 +102,7 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hunger"
+        android:text="Satiation"
         tools:layout_editor_absoluteX="163dp"
         tools:layout_editor_absoluteY="173dp" />
 

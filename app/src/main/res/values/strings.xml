@@ -9,4 +9,6 @@
     <string name="petIVDescription">Image of the pet</string>
     <string name="pencilIVDescription">Image of a pencil, intended to take user to settings, probably should be removed.</string>
     <string name="feedButtonText">Feed</string>
+    <string name="chat_click_text">You can display the current user conversation to this screen and also allow user to send a new message.</string>
+    <string name="action_settings_title">Settings</string>
 </resources>

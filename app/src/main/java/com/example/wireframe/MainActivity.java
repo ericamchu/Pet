@@ -50,6 +50,15 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
+        findViewById(R.id.feedButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                boolean fed = true;
+                //MainActivityDirections.ActionFirstFragmentToSecondFragment action = MainActivityDirections.actionFirstFragmentToSecondFragment(fed);
+                //NavHostFragment.findNavController(MainActivity.this).navigate(action);
+                finish();
+            }
+        });
     }
 
 

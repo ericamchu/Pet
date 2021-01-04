@@ -11,12 +11,16 @@
         android:label="activity_main"
         tools:layout="@layout/activity_main" >
         <action
-            android:id="@+id/action_mainActivity_to_play"
-            app:destination="@id/play" />
+            android:id="@+id/action_mainActivity_to_tempActivity"
+            app:destination="@id/tempActivity" />
     </activity>
-    <fragment
-        android:id="@+id/play"
-        android:name="com.example.wireframe.Play"
-        android:label="fragment_play"
-        tools:layout="@layout/fragment_play" />
+    <activity
+        android:id="@+id/tempActivity"
+        android:name="com.example.wireframe.TempActivity"
+        android:label="activity_temp"
+        tools:layout="@layout/activity_temp" >
+        <argument
+            android:name="fed"
+            app:argType="boolean" />
+    </activity>
 </navigation>

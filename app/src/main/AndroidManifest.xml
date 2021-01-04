@@ -26,7 +26,12 @@
         </activity>
         <activity
             android:name=".TempActivity"
-            android:label="Temp">
+            android:label="Temp"
+            android:parentActivityName=".TempActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"
+                />
 
         </activity>
 

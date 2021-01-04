@@ -63,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
                 boolean fed = true;
                 //MainActivityDirections.ActionFirstFragmentToSecondFragment action = MainActivityDirections.actionFirstFragmentToSecondFragment(fed);
                 //NavHostFragment.findNavController(MainActivity.this).navigate(action);
+                startActivity(new Intent(getApplicationContext(), TempActivity.class));
                 finish();
             }
         });

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="satiationValue">90</integer>
+    <integer name="cleannessValue">75</integer>
+    <integer name="affectionValue">60</integer>
+</resources>

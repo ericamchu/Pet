@@ -73,7 +73,7 @@
         android:layout_height="33dp"
         android:layout_marginStart="20dp"
         android:max="100"
-        android:progress="30"
+        android:progress="@integer/satiationValue"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
@@ -86,7 +86,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:max="100"
-        android:progress="50"
+        android:progress="@integer/cleannessValue"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/satiationBar" />
 
@@ -99,7 +99,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:max="100"
-        android:progress="80"
+        android:progress="@integer/affectionValue"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cleannessBar" />
 
